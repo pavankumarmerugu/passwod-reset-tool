@@ -12,6 +12,10 @@ import re
 
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+sshipaddr = ""
+sshport = 22
+sshuname = "your username"
+sshpassword = "your password"
 
 message = ""
 flag = 0
@@ -68,7 +72,7 @@ def password():
                         p = paramiko.SSHClient()
                         p.set_missing_host_key_policy(
                             paramiko.AutoAddPolicy())  # This script doesn't work for me unless this line is added!
-                        p.connect("172.23.254.117", port=22, username="testuser1", password="123Omni@us")
+                        p.connect(sshipaddr, sshport, username=sshuname, password=sshpassword)
                         print('connected')
                     except paramiko.AuthenticationException:
                         print('Failed to connect to %s due to wrong username/password')
