@@ -17,7 +17,7 @@
             <li><i>Active Directory with AD Users and computers</i></li>
     </ul>
 
-<h2>Foler View</h2>
+<h2>Folder View</h2>
 <p>A folder view represents a hierarchical view of information, where each file is located</p>
 <p>Click on the arrow(s) to open or close the folder</p>
 
