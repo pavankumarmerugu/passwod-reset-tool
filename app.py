@@ -7,7 +7,7 @@ import re
 #p = paramiko.SSHClient()
 #p.set_missing_host_key_policy(
 #    paramiko.AutoAddPolicy())  # This script doesn't work for me unless this line is added!
-#p.connect("172.23.254.117", port=22, username="testuser1", password="123Omni:us")
+#p.connect("172.23.254.117", port=22, username="testuser1", password="")
 
 
 app = Flask(__name__)
